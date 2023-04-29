@@ -5,26 +5,8 @@ This is a web app via which you can manage portfolios of stocks. Not only will t
 
 It uses SQLite3 database to store all changes in stocks and user's. The layout of the database looks like this:
 
-+-----------+
-|   users   |
-+-----------+
-| id        |----+
-| username  |    |
-| hash      |    |
-| cash      |    |
-+-----------+    |
-                 |
-+-----------+    |    +--------------+
-| portfolio |    |    | transactions |
-+-----------+    |    +--------------+
-| user_id   |----+----| user_id      |
-| symbol    |         | id           |
-| shares    |         | transaction_type |
-+-----------+         | symbol       |
-                      | shares       |
-                      | price        |
-                      | timestamp    |
-                      +--------------+
+![image](https://user-images.githubusercontent.com/96751716/235317351-ae6ff9bd-499f-4eb8-8974-3df775ee63cc.png)
+
 
 
 

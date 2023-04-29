@@ -1,0 +1,20 @@
++-----------+
+|   users   |
++-----------+
+| id        |----+
+| username  |    |
+| hash      |    |
+| cash      |    |
++-----------+    |
+                 |
++-----------+    |    +--------------+
+| portfolio |    |    | transactions |
++-----------+    |    +--------------+
+| user_id   |----+----| user_id      |
+| symbol    |         | id           |
+| shares    |         | transaction_type |
++-----------+         | symbol       |
+                      | shares       |
+                      | price        |
+                      | timestamp    |
+                      +--------------+
